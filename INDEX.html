@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agudu Godfred Etornam | Portfolio</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f5f4ef;
+  color: #17231f;
+  line-height: 1.7;
+}
+
+a { text-decoration: none; color: inherit; }
+
+header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a:hover { color: #839c36; }
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 25px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: #839c36;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+h1, h2, h3 {
+  font-family: Manrope, sans-serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(42px, 6vw, 75px);
+  margin: 25px 0;
+}
+
+h1 span, h2 span { color: #839c36; }
+
+.hero p { color: #657168; }
+
+.button {
+  display: inline-block;
+  background: #172c25;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 4px;
+  margin-top: 25px;
+}
+
+.art {
+  background: #dce5d2;
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+  box-shadow: 18px 18px #e4e6dc;
+}
+
+.art strong {
+  font: 800 100px Manrope;
+  color: #233b30;
+}
+
+section.content {
+  padding: 85px 25px;
+}
+
+.inner {
+  max-width: 1150px;
+  margin: auto;
+}
+
+h2 {
+  font-size: clamp(32px, 5vw, 55px);
+  margin: 20px 0 30px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.services {
+  background: #e9ece4;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.service-card {
+  background: #f8f8f3;
+  padding: 28px;
+  border: 1px solid #dce1d6;
+}
+
+.service-card h3 { margin: 15px 0; }
+
+.service-card p {
+  color: #68746a;
+  font-size: 14px;
+}
+
+.service-icon {
+  color: #839c36;
+  font-size: 28px;
+}
+
+.skills {
+  background: #182c25;
+  color: white;
+}
+
+.skills span {
+  display: inline-block;
+  border: 1px solid #607064;
+  padding: 10px 15px;
+  margin: 6px;
+  border-radius: 3px;
+}
+
+.contact {
+  background: #dce5d2;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.contact-info p {
+  margin: 15px 0;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #bac8b1;
+  background: #f8f8f3;
+  font: inherit;
+}
+
+button {
+  background: #172c25;
+  color: white;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #68746a;
+  font-size: 13px;
+}
+
+@media(max-width: 750px) {
+  .hero, .about, .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero { padding: 60px 22px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">AGUDU ETORNAM</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div>
+    <p class="eyebrow">CREATIVE • TECHNICAL • PURPOSE-DRIVEN</p>
+    <h1>Agudu Godfred <span>Etornam</span></h1>
+    <p>
+      Mechanical Engineering Student | Graphic Designer |
+      Microsoft Office Specialist | Church Media & Projection
+    </p>
+    <a class="button" href="#contact">Contact Me ↗</a>
+  </div>
+
+  <div class="art">
+    <strong>GE.</strong>
+  </div>
+</section>
+
+<section class="content" id="about">
+  <div class="inner about">
+    <div>
+      <p class="eyebrow">01 — ABOUT ME</p>
+      <h2>Curious by nature.<br><span>Versatile by skill.</span></h2>
+    </div>
+    <div>
+      <p>
+        I am Agudu Godfred Etornam, a Mechanical Engineering
+        student with a passion for creativity, technology
+        and practical problem-solving.
+      </p>
+      <p>
+        I have skills in graphic design, Microsoft Word,
+        PowerPoint and Excel. I also provide church media
+        support, including projecting scriptures, songs,
+        announcements and presentations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="content services" id="services">
+  <div class="inner">
+    <p class="eyebrow">02 — MY SERVICES</p>
+    <h2>What I <span>do.</span></h2>
+
+    <div class="service-grid">
+
+      <article class="service-card">
+        <div class="service-icon">✳</div>
+        <h3>Graphic Design</h3>
+        <p>Flyers, posters, banners and other creative designs.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▤</div>
+        <h3>Microsoft Word</h3>
+        <p>Typing, document formatting and professional reports.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▥</div>
+        <h3>PowerPoint</h3>
+        <p>Professional presentations for projects and events.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">▦</div>
+        <h3>Microsoft Excel</h3>
+        <p>Spreadsheets, tables and data organisation.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">♫</div>
+        <h3>Church Projection</h3>
+        <p>Projection of scriptures, songs, announcements and presentations.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">⚙</div>
+        <h3>Mechanical Engineering</h3>
+        <p>Mechanical engineering studies, technical knowledge and problem-solving.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="content skills" id="skills">
+  <div class="inner">
+    <p class="eyebrow">03 — MY SKILLS</p>
+    <h2>My <span>Toolkit.</span></h2>
+    <span>Graphic Design</span>
+    <span>Microsoft Word</span>
+    <span>PowerPoint</span>
+    <span>Microsoft Excel</span>
+    <span>Church Projection</span>
+    <span>Presentation Support</span>
+    <span>Mechanical Engineering</span>
+    <span>Problem-solving</span>
+  </div>
+</section>
+
+<section class="content contact" id="contact">
+  <div class="inner contact-grid">
+    <div>
+      <p class="eyebrow">04 — CONTACT ME</p>
+      <h2>Let's <span>talk.</span></h2>
+      <p>Have a project or need my services? Get in touch.</p>
+
+      <a class="button"
+         href="https://wa.me/233268366232"
+         target="_blank">
+         Chat on WhatsApp ↗
+      </a>
+    </div>
+
+    <div class="contact-info">
+      <p><strong>Phone:</strong>
+        <a href="tel:+233268366232">0268366232</a>
+      </p>
+
+      <p><strong>Email:</strong>
+        <a href="mailto:etornamgodfred@gmail.com">
+          etornamgodfred@gmail.com
+        </a>
+      </p>
+
+      <p><strong>Location:</strong> ACP, Pokuase, Ghana</p>
+
+      <form id="contactForm">
+        <input type="text" id="name"
+               placeholder="Your name" required>
+
+        <textarea id="message"
+                  placeholder="Your message"
+                  rows="4" required></textarea>
+
+        <button type="submit">Send Enquiry ↗</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © <span id="year"></span> Agudu Godfred Etornam.
+  All rights reserved.
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+document.getElementById("contactForm")
+.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+
+  const subject = encodeURIComponent(
+    "Website enquiry from " + name
+  );
+
+  const body = encodeURIComponent(
+    "Hello Godfred,\n\n" + message +
+    "\n\nFrom: " + name
+  );
+
+  window.location.href =
+    "mailto:etornamgodfred@gmail.com?subject=" +
+    subject + "&body=" + body;
+});
+</script>
+
+</body>
+</html>
